@@ -9,7 +9,7 @@ keyword)
 주제) 김치로 만드는 요리 ( 김치찌개, 김치전, 김치볶음밥 )
 
 
-진행과정)
+프로젝트 진행)
 
     1. 각 요리마다 issue와 branch를 만든다.
 
@@ -29,14 +29,26 @@ keyword)
     cummit을 기능 단위로 쪼개자. cummit message 규칙 정하고 쓰자.
 
 
-git 명령어)
+## git 명령어)
+<br/>
 
-    
+### **commit** 
 
-    branch 변경: git checkout 브랜치명
+    로컬 cummit 취소: git reset HEAD 파일명(없으면 add한 cummit 전체취소)
+
+### **branch(브랜치)**
+
+    branch 조회: git branch
+
+    branch 생성: git branch 브랜치명
+
+    branch 이름 변경: git branch -m 기존명 변경명
+
+    branch 삭제: git branch -d 브랜치명
+
+    branch 전환: git checkout 브랜치명
 
     branch 병합: (main으로 checkout 후) git merge 브랜치명
 
 
 
-    로컬 cummit 취소: git reset HEAD 파일명(없으면 add한 cummit 전체취소)
