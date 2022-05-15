@@ -20,6 +20,8 @@ keyword)
 
 학습내용)
 
-issue는 branch 관계없이 #으로 tag가능
+    issue는 branch 관계없이 #으로 tag가능
 
-sub branch의 cummit 내역은 main branch에 merge하지 않으면 반영이 안됨.
+    sub branch의 cummit 내역은 main branch에 merge하지 않으면 반영이 안됨.
+
+    시작 때 README issue도 만들어 정리 -> 깔끔함?, 굳이 필요없을 것 같다
