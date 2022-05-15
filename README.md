@@ -25,3 +25,7 @@ keyword)
     sub branch의 cummit 내역은 main branch에 merge하지 않으면 반영이 안됨.
 
     시작 때 README issue도 만들어 정리 -> 깔끔함?, 굳이 필요없을 것 같다
+
+    cummit을 기능 단위로 쪼개자. cummit message 규칙 정하고 쓰자.
+
+    
