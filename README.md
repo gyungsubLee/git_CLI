@@ -28,4 +28,15 @@ keyword)
 
     cummit을 기능 단위로 쪼개자. cummit message 규칙 정하고 쓰자.
 
+
+git 명령어)
+
     
+
+    branch 변경: git checkout 브랜치명
+
+    branch 병합: (main으로 checkout 후) git merge 브랜치명
+
+
+
+    로컬 cummit 취소: git reset HEAD 파일명(없으면 add한 cummit 전체취소)
