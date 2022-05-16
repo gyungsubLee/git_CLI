@@ -70,6 +70,10 @@ git branch 이름변경(Master -> Main)
     
     git branch -M main
 
+로컬repo, 원격repo 연결(branch Tracking)
+
+    git remote add <branch명(main -> origin> <url> (url -> github-repo에서 확인)
+
 push
 
     git push -u origin main ( 자세한 내용 밑의 push section에서 확인)
