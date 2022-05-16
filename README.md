@@ -46,6 +46,9 @@ git 프로젝트 사용)
 
     로컬 cummit 취소: git reset HEAD 파일명(없으면 add한 cummit 전체취소)
 
+    정리)keyword
+    버전관리, git초기화, commit(커밋), commit내역(history), push, pull, clone, tracking
+
 
 ### **remote(원격 repo)** 
 
