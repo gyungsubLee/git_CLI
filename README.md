@@ -72,10 +72,6 @@ push
 
     git push -u origin main ( 자세한 내용 밑의 push section에서 확인)
 
-원격repo에 덮어 씌우기
-
-    git push -f origin master
-
 ---
 <br/><br/>
 
@@ -91,6 +87,11 @@ push
     --soft: 돌아가려는 지점으로 돌아가지만 add 내용은 남아 있는다.
 
     --mixed: default 값이다. 돌아가려는 지점으로 돌아가지만 인덱스는 초기화 된다. 
+
+원격repo에 덮어 씌우기
+
+    git push -f origin master
+
 
 
 
