@@ -38,24 +38,66 @@ git 프로젝트 사용)
 
 # git 명령어)
 
-## **로컬repo** 
+## **프로젝트에 git 설정: git initailize(초기화)
 
-    git initailize(초기화): git init
+    git init
 
-    변경된 파일 및 add 상태 확인 : git status
+<br>
 
-    변경 작업 add: git add [파일이름] 
-                              -> add 할 파일을 정한다(staging), 전체선택(.)
+# **git commit하기**
 
-    add한 파일 commit: git commit -m "메세지 입력"
+변경된 파일 및 add 상태 확인  
+    
+    git status
 
-    commit 추적: git log (나가기:Q)
+변경 작업 add
 
-    git branch 이름변경(Master -> Main): git branch -M main
+    git add [파일이름]  -> add 할 파일을 정한다(staging), 전체선택(.)
 
-    commit들 push: git push -u origin main
+add한 파일 commit
+
+    git commit -m "메세지 입력"
+
+<br/>
+
+commit 추적
+
+    git log (나가기:Q)
+
+git branch 이름변경(Master -> Main)
+    
+    git branch -M main
+
+push
+
+    git push -u origin main ( 자세한 내용 밑의 push section에서 확인)
+
+원격repo에 덮어 씌우기
+
+    git push -f origin master
 
 ---
+<br/><br/>
+
+## **commit 삭제**
+-로컬repo commit 삭제
+
+    git reset <옵션><돌아가고싶은 커밋 id>
+
+옵션: 3가지
+
+    --hard: 돌아가려는지점 이후 모든 내용 삭제.
+
+    --soft: 돌아가려는 지점으로 돌아가지만 add 내용은 남아 있는다.
+
+    --mixed: default 값이다. 돌아가려는 지점으로 돌아가지만 인덱스는 초기화 된다. 
+
+
+
+
+---
+
+<br/><br/>
 
 ## **PUSH**
 
@@ -105,6 +147,8 @@ git 프로젝트 사용)
 
 ---
 
+<br/><br/>
+
 ## **remote(원격 repo)** 
 
     로컬repo에 연결된 원격repo 확인: git remote -v
@@ -116,7 +160,7 @@ git 프로젝트 사용)
     (origin이라 표현하는 main은 뜻하는지 branch 전체를 뜻하는지 정확히 
     모르겠다...)
 
-<br/>
+<br/><br/>
 
 ## **branch(브랜치)**
 
