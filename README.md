@@ -5,9 +5,11 @@
 keyword)
  git init, Tracking, cummit, push, pull, issue, branch, merge
 
-git)
 
-    1. 프로젝트에 git 연결하기 - 프로젝트 폴더 생성 및 git initailize
+git 프로젝트 사용)
+
+    1. 프로젝트에 git 연결하기 - 프로젝트 폴더 생성 및 git initailize(초기화)
+
 
 
 
@@ -37,22 +39,26 @@ git)
 ## git 명령어)
 <br/>
 
-git initailize(초기화): git init
+### **로컬repo** 
+
+    git initailize(초기화): git init
+
+
+    로컬 cummit 취소: git reset HEAD 파일명(없으면 add한 cummit 전체취소)
+
 
 ### **remote(원격 repo)** 
 
     로컬repo에 연결된 원격repo 확인: git remote -v
 
-    로컬repo와 원격repo 연결: git remote add <branch명> <url> (url -> github 홈페이지 확인)
+    로컬repo와 원격repo 연결: git remote add <branch명> <url> 
+                              (url -> github 홈페이지 확인)
 
-
-
+    로컬repo에서 원격repo 연결 제거: git remote remove <브랜치명?>
+    (origin이라 표현하는 main은 뜻하는지 branch 전체를 뜻하는지 정확히 
+    모르겠다...)
 
 <br/>
-
-### **commit** 
-
-    로컬 cummit 취소: git reset HEAD 파일명(없으면 add한 cummit 전체취소)
 
 ### **branch(브랜치)**
 
