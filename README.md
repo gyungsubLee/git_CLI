@@ -1,29 +1,30 @@
-# git_test@@
- 
- git - 복습)
+# git_복습
 
-keyword)
- git init, Tracking, cummit, push, pull, issue, branch, merge
-
-
-git 프로젝트 사용)
+## git 프로젝트 사용)
+개인)
 
     1. 프로젝트에 git 연결하기 - 프로젝트 폴더 생성 및 git initailize(초기화)
 
+    2. issue로 작업 구조화하기
+
+    3. 작업 issue연동하여 commit하고 push하기
 
 
+협업)
 
-주제) 김치로 만드는 요리 ( 김치찌개, 김치전, 김치볶음밥 )
+    1. issue 프로젝트 작업 나누고 할당하기
 
+    2. 개인 branch를 만들어  할당된 작업 진행하기
 
-프로젝트 진행)
+    3. 각 작업 개발용 branch에 merge 하기
 
-    1. 각 요리마다 issue와 branch를 만든다.
+    4. PR, 코드리뷰를 진행하여 release용 branch에 merge하기 
 
-    2. 각 branch마다 작업한 cummit을 issue 와 연동 시킨다.
+    5. 작업이 끝난 branch 삭제하고 새 작업 branch 만들기 (branch 충돌 방지)
 
-    3. 각 branch를 main에 merge 시킨다.
+---
 
+<br/><br/>
 
 학습내용)
 
@@ -35,6 +36,7 @@ git 프로젝트 사용)
 
     cummit을 기능 단위로 쪼개자. cummit message 규칙 정하고 쓰자.
 
+<br/><br/>
 
 # git 명령어)
 
@@ -187,5 +189,18 @@ pull: ... + merge
 따라서 pull은 병합과정도 포함되어 있기 때문에 pull하기 전에 commit을 하지 않으면 충돌 발생 -> 덮어쓰기로 commit 삭제될 수 있다. 
 => 기존 작업에 대한 commit을 미리 해두고 pull  수행
 
+---
 
+<br/><br/>
+
+주제) 김치로 만드는 요리 ( 김치찌개, 김치전, 김치볶음밥 )
+
+
+프로젝트 진행)
+
+    1. 각 요리마다 issue와 branch를 만든다.
+
+    2. 각 branch마다 작업한 cummit을 issue 와 연동 시킨다.
+
+    3. 각 branch를 main에 merge 시킨다.
 
