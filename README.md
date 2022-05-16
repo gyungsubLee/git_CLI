@@ -3,7 +3,12 @@
  git - 복습)
 
 keyword)
- cummit, push, pull, issue, branch, merge
+ git init, Tracking, cummit, push, pull, issue, branch, merge
+
+git)
+
+    1. 프로젝트에 git 연결하기 - 프로젝트 폴더 생성 및 git initailize
+
 
 
 주제) 김치로 만드는 요리 ( 김치찌개, 김치전, 김치볶음밥 )
@@ -30,6 +35,19 @@ keyword)
 
 
 ## git 명령어)
+<br/>
+
+git initailize(초기화): git init
+
+### **remote(원격 repo)** 
+
+    로컬repo에 연결된 원격repo 확인: git remote -v
+
+    로컬repo와 원격repo 연결: git remote add <branch명> <url> (url -> github 홈페이지 확인)
+
+
+
+
 <br/>
 
 ### **commit** 
