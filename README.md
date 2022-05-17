@@ -81,6 +81,18 @@ push
 ---
 <br/><br/>
 
+## **commit 메세지 수정**
+-로컬repo commit 메세지 수정
+
+    git commit --amend -m <수정메세지>
+
+-원격repo commit 메세지 수정
+
+    git push --force <branch명>
+
+로컬 변경 내용 강제 push -> 개인 프로젝트만... 협업시에는 망함
+
+
 ## **commit 삭제**
 -로컬repo commit 삭제
 
