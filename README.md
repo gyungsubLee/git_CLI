@@ -24,9 +24,9 @@
 
 ---
 
-<br/><br/>
+<br/>
 
-학습내용)
++)
 
     issue는 branch 관계없이 #으로 tag가능
 
@@ -38,15 +38,15 @@
 
 <br/><br/>
 
-# git 명령어)
+# **git 명령어)**
 
-## **프로젝트에 git 설정: git initailize(초기화)
+## **프로젝트에 git 설정: git initailize(초기화)**
 
     git init
 
 <br>
 
-# **git commit하기**
+## **파일 add하기(인덱스에 추가)** 
 
 변경된 파일 및 add 상태 확인  
     
@@ -61,6 +61,10 @@ add한 파일 commit
     git commit -m "메세지 입력"
 
 <br/>
+
+
+## **git commit하기**
+
 
 commit 추적
 
@@ -79,7 +83,7 @@ push
     git push -u origin main ( 자세한 내용 밑의 push section에서 확인)
 
 ---
-<br/><br/>
+<br/>
 
 ## **commit 메세지 수정**
 -로컬repo commit 메세지 수정
@@ -90,13 +94,22 @@ push
 
     git push --force <branch명>
 
-로컬 변경 내용 강제 push -> 개인 프로젝트만... 협업시에는 망함
+로컬 변경 내용 강제 push -> 개인 프로젝트만... 협업 시에는 commit_History가 꼬일 수 있다.
 
+---
+<br/>
 
 ## **commit 삭제**
 -로컬repo commit 삭제
 
     git reset <옵션><돌아가고싶은 커밋 id>
+
+<br>
+
+    git reset HEAD 파일명(없으면 add한 cummit 전체취소)
+
+    (HEAD: 가장 최신commit, 
+     HEAD ~ '숫자': HEAD에서 HEAD기준으로 '숫자'번째까지 아래 commit) 
 
 옵션: 3가지
 
@@ -106,15 +119,14 @@ push
 
     --mixed: default 값이다. 돌아가려는 지점으로 돌아가지만 인덱스는 초기화 된다. 
 
-원격repo에 덮어 씌우기
+<br/>
+
+원격repo에 로컬 commit 반영
 
     git push -f origin master
 
-
-
-
-
 ---
+
 
 <br/><br/>
 
@@ -146,22 +158,15 @@ push
 
     git push
 
+<br>
 코드 변경이력 덮어쓰기)
 
     git push -f origin my-feature
 
-
-
 <br>
-
-    ** commit 취소
-    로컬 commit 취소: git reset HEAD 파일명(없으면 add한 cummit 전체취소)
-    원격 commit 취소: 
 
     정리)keyword
     버전관리pull, clone
-
-    완료)git초기화, commit(커밋), commit내역(history), push
 
 
 ---
