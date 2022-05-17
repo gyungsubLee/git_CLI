@@ -1,4 +1,4 @@
-# git_복습
+# git_정리(복습)
 
 ## git 프로젝트 사용)
 개인)
@@ -46,7 +46,7 @@
 
 <br>
 
-## **파일 add하기(인덱스에 추가)** 
+## **파일 add(인덱스에 추가)** 
 
 변경된 파일 및 add 상태 확인  
     
@@ -56,15 +56,18 @@
 
     git add [파일이름]  -> add 할 파일을 정한다(staging), 전체선택(.)
 
-add한 파일 commit
+add 취소
 
-    git commit -m "메세지 입력"
+    추가해라
 
 <br/>
 
 
-## **git commit하기**
+## **git commit, push**
 
+add한 파일 commit
+
+    git commit -m "메세지 입력"
 
 commit 추적
 
@@ -99,7 +102,7 @@ push
 ---
 <br/>
 
-## **commit 삭제**
+## **commit 삭제 (취소, 이전 버전으로 되돌리기)**
 -로컬repo commit 삭제
 
     git reset <옵션><돌아가고싶은 커밋 id>
@@ -170,7 +173,21 @@ push
 
 
 ---
+<br/>
 
+
+## **git pull**
+
+    추가 정리하기
+
+<br/>
+
+
+## **git Clone**
+
+    추가 정리하기
+
+---
 <br/><br/>
 
 ## **remote(원격 repo)** 
