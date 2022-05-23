@@ -152,26 +152,26 @@ push
     git commit -m "change 1"
     git push
 
+<br>
+
 인자생략2)
 
     git config --global push.defalut current
 
+    -> git push
+
 여러 브랜치를 넘나 들면서 작업하는 경우 최초의 한번 인자는 넘기는 것도 귀찮다.
 대부분의 경우 로컬repo와 원격repo가 동일한 branch 이름을 사용하기 때문에 현재 branch를 기준으로 git push 명령어가 작동되가 설정한다. 
-<br><br>
-**push.default**,  **current**로 가능하다
+<br>
+> **push.default**,**current**로 가능
 
-    git push
+ 
 
 <br>
 코드 변경이력 덮어쓰기)
 
     git push -f origin my-feature
 
-<br>
-
-    정리)keyword
-    버전관리pull, clone
 
 
 ---
