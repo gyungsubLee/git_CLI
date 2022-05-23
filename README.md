@@ -176,16 +176,43 @@ push
 <br/>
 
 
-## **git pull**
+## **git Pull**
+ local repository와 비교하여 병합, local repository에 저장( add )까지 수행
+> git pull = git fetch + git merge 
+- **git fetch**: local에 연결된 remote repository의 브랜치 목록과 그 파일 내용을 최신으로 업데이트 하는 명령어
+(local과 remote의 싱크를 맞추는 새로고침 역할)
 
-    추가 정리하기
+- **git merge**는 두 개의 branch를 병합하는 명령어
+
+협업 과정에서 **프로젝트의 최신 코드를 local로 가져오는 역할**로 많이 사용
+
+     git pull { 원격 저장소 별명 } { 브랜치명 }
+
+<br/>
+
+**rebase**: 병합하는 명령어 중 하나<br/>
+Git에서는 최신 코드로 업데이트 할 때 rebase를 사용할 것을 권장<br/>
+**rebase 명령어**는 merge 명령어보다 **히스토리( log )가 깔끔**해진다
+> **git pull --rebase** = git fetch + git rebase
+
+     git pull --rebase { 원격 저장소 별명 } { 브랜치명 }
+
 
 <br/>
 
 
 ## **git Clone**
+프로젝트 처음, 중간에 git이 꼬여 초기화 시 등 초기 설정 시 사용<br/>
+원격repo와 연결하여 해당 repo 파일 모두 로컬repo에 가져옴. <br/><br/>
 
-    추가 정리하기
+원격repo clone
+
+     git clone { 원격 저장소 URL }
+
+특정 브랜치를 clone
+
+     git clone -b { 브랜치명 } { 원격 저장소 URL }
+
 
 ---
 <br/><br/>
