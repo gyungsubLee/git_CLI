@@ -51,32 +51,79 @@
 ## **변경사항 임시저장(stash)** 
 > 다른 브랜치 checkout 시 현재 branch의 작업이 사라진다. 
 **아직 완료되지 않는 작업**인 경우 commit 말고 **stash 처리 후** 다른 branch 작업 후 **다시 불러와 작업**을 진행한다. 
+
 <br/>
 
-● 완료되지 않는 작업 임시저장(stash 처리)
+### ● 완료되지 않는 작업 임시저장(stash 처리) 
 >해당 명령어를 통해 스택에 새로운 stash를 만들어 저장<br/>
 (staged(add)한 파일도 저장가능)
 
     git stash
     git stash save
 
-임시저장(stash) 목록 확인
+<br/>
+
+### ● 임시저장(stash) 목록 확인 
 > 스택에 저장된 stash list를 확인 
 
     git stash list
 
-stash 가져오기(임시저장한 작업 다시 가져오기)
+<br/>
+
+### ● stash 가져오기(임시저장한 작업 다시 가져오기)
+> stash는 브랜치 상관없이 가져올 수 있으며 
+>충돌이 일어난 경우 git이 알아서 알려준다. 
 
     git stash apply ( 가장 최근 stash 가져옴)
 
     git stash apply [stash명] ( <stash명(ex. stash@{2})> 가져옴 )
 
+<br/>
+
 >  위 명령어는 staged(add) 상태의 파일을 자동으로 staged(add) 상태로 만들어 주지 않는다.<br/>
-> ```-index``` 옵션을 통해 stage 상태까지 복원 
+> ```--index``` 옵션을 통해 stage 상태까지 복원 
 
     git stash apply --index
 
+
+
 <br/>
+
+### ● stash 제거
+> stash를 가져온 후 스택에는 여전히 stash가 남아있다. 따라서 필요없는 stash는 제거한다.
+
+    git stash drop  ( 가장 최근 stash 제거)
+
+    git stash drop [stash명] (stash명 제거)
+
+<br/> 
+
+> stash 적용과 동시에 스택에서 제거
+
+    git stash pop
+
+<br/>
+
+●  stash 되돌리기
+
+    git stash show -p | git apply - R ( 가장 최근 stash 되돌리기)
+
+    git stash show -p [stash명] | git apply -R (stash명 되돌리기)
+
+<br/>
+
+> Tip) alias -> 명령어 수정 -> 간편하게 사용
+
+    git config --global alias.stash-unapply 'git stash show -p | git apply - R'( stash-unapply로 명령어 수정 )
+    
+    git stash apply
+    #... work work work
+
+    git stash-unapply
+
+<br/>
+<br/>
+
 
 ## **변경 사항 add(인덱스에 추가)** 
 
@@ -84,7 +131,7 @@ stash 가져오기(임시저장한 작업 다시 가져오기)
     
     git status
 
-변경 작업 add(staging)
+변경 작업 add(staging) 
 
     git add <file>  -> add(staging) 할  파일 선택, 전체선택(.)
 
@@ -101,7 +148,7 @@ add 취소
 >파일은 터미널 디렉토리 기준으로 작성<br/>
 파일명에 "" 안해도 됨
 
-<br/>
+<br/><br/>
 
 
 ## **git commit, push**
@@ -127,24 +174,27 @@ push
     git push -u origin main ( 자세한 내용 밑의 push section에서 확인)
 
 ---
-<br/>
+<br/><br/>
 
-## **commit 메세지 수정**
--로컬repo commit 메세지 수정
+## **commit 수정**
+### ● 로컬repo commit 수정
+> ```작업 내역 수정```의 경우 수정한 작업을 add(staged)한 후 commit_amend 
 
     git commit --amend -m <수정메세지>
 
--원격repo commit 메세지 수정
+<br/>
+
+### ● 원격repo commit  수정
 
     git push --force <branch명>
 
-로컬 변경 내용 강제 push -> 개인 프로젝트만... 협업 시에는 commit_History가 꼬일 수 있다.
+> 로컬repo의 commit history를 원격repo의 commit history에 덮어씌운다.(```강제push```) 
 
 ---
 <br/>
 
 ## **commit 삭제 (취소, 이전 버전으로 되돌리기)**
--로컬repo commit 삭제
+### ● 로컬repo commit 삭제
 
     git reset <옵션><돌아가고싶은 커밋 id>
 
@@ -152,8 +202,10 @@ push
 
     git reset HEAD 파일명(없으면 add한 cummit 전체취소)
 
-    (HEAD: 가장 최신commit, 
-     HEAD ~ '숫자': HEAD에서 HEAD기준으로 '숫자'번째까지 아래 commit) 
+> HEAD: 가장 최신commit <br/>
+> HEAD ~ '숫자': HEAD에서 HEAD기준으로 '숫자'번째까지 아래 commit) 
+
+<br>
 
 옵션: 3가지
 
@@ -165,9 +217,20 @@ push
 
 <br/>
 
-원격repo에 로컬 commit 반영
+### ● 원격repo commit 삭제
 
-    git push -f origin master
+    git push -f <원격repo_branch명> <로컬repo_branch명>
+
+<br/>
+
+> -f : force의 약어 <br/>
+> origin: 원격repo의 main branch <br/>
+> main: 로컬repo의 main branch
+
+
+    git push -f origin main (로컬_main의 commit_history를 원격_main에 덮씌운다.)
+
+
 
 ---
 
