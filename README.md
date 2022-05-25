@@ -60,10 +60,16 @@
 
 add 취소
 
-    git restore <file>
+    git restore <file> -> 취소할 파일 선택, 전체선택(.)
 
-![add(staging)취소, 파일 디렉토리](https://user-images.githubusercontent.com/95308384/170196847-1284dc2d-72db-4d81-8f9b-5d6b790ea595.png)
 
+>![add(staging)취소, 파일 디렉토리](https://user-images.githubusercontent.com/95308384/170196847-1284dc2d-72db-4d81-8f9b-5d6b790ea595.png)
+>
+>
+>![터미널 디렉토리](https://user-images.githubusercontent.com/95308384/170198540-a9d794c7-3874-4948-ae0f-2bf0136e4df2.png)
+>
+>파일은 터미널 디렉토리 기준으로 작성<br/>
+파일명에 "" 안해도 됨
 
 <br/>
 
