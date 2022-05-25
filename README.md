@@ -54,13 +54,16 @@
     
     git status
 
-변경 작업 add
+변경 작업 add(staging)
 
-    git add [파일이름]  -> add 할 파일을 정한다(staging), 전체선택(.)
+    git add <file>  -> add(staging) 할  파일 선택, 전체선택(.)
 
 add 취소
 
-    추가해라
+    git restore <file>
+
+![add(staging)취소, 파일 디렉토리](https://user-images.githubusercontent.com/95308384/170196847-1284dc2d-72db-4d81-8f9b-5d6b790ea595.png)
+
 
 <br/>
 
