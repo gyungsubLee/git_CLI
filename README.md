@@ -46,9 +46,39 @@
 
     git init
 
-<br>
+<br/>
 
-## **파일 add(인덱스에 추가)** 
+## **변경사항 임시저장(stash)** 
+> 다른 브랜치 checkout 시 현재 branch의 작업이 사라진다. 
+**아직 완료되지 않는 작업**인 경우 commit 말고 **stash 처리 후** 다른 branch 작업 후 **다시 불러와 작업**을 진행한다. 
+<br/>
+
+● 완료되지 않는 작업 임시저장(stash 처리)
+>해당 명령어를 통해 스택에 새로운 stash를 만들어 저장<br/>
+(staged(add)한 파일도 저장가능)
+
+    git stash
+    git stash save
+
+임시저장(stash) 목록 확인
+> 스택에 저장된 stash list를 확인 
+
+    git stash list
+
+stash 가져오기(임시저장한 작업 다시 가져오기)
+
+    git stash apply ( 가장 최근 stash 가져옴)
+
+    git stash apply [stash명] ( <stash명(ex. stash@{2})> 가져옴 )
+
+>  위 명령어는 staged(add) 상태의 파일을 자동으로 staged(add) 상태로 만들어 주지 않는다.<br/>
+> ```-index``` 옵션을 통해 stage 상태까지 복원 
+
+    git stash apply --index
+
+<br/>
+
+## **변경 사항 add(인덱스에 추가)** 
 
 변경된 파일 및 add 상태 확인  
     
