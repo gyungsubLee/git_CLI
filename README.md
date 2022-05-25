@@ -1,6 +1,10 @@
 # git_정리(복습)
 
-> sparta_git 3주차 학습 후 추가 정리 필요
+> ### sparta_git 3주차 정리 필요
+> ### pull 재정리 필요
+> ### reset-옵션(인덱스) 정리 필요
+
+<br/>
 
 ## git 프로젝트 사용)
 개인)
@@ -330,7 +334,7 @@ Git에서는 최신 코드로 업데이트 할 때 rebase를 사용할 것을 �
 ---
 <br/><br/>
 
-## **remote(원격 repo)** 
+## 👉 **remote(원격 repo) command** 
 
     로컬repo에 연결된 원격repo 확인: git remote -v
 
@@ -343,7 +347,7 @@ Git에서는 최신 코드로 업데이트 할 때 rebase를 사용할 것을 �
 
 <br/><br/>
 
-## **branch(브랜치)**
+## 👉 **branch(브랜치) command**
 
     branch 조회: git branch
 
